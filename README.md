@@ -4,7 +4,7 @@ A professional, full-stack weather application featuring a high-performance **Fa
 
 
 
-## 🎓 What I Learned (Senior Engineering Competencies)
+## 🎓 What I Learned
 
 Throughout this project, I transitioned from writing simple scripts to building a **resilient microservice**. Key takeaways include:
 
@@ -66,4 +66,3 @@ Stop Container: docker stop weather-app
     2. `git commit -m "docs: add professional README with architecture and learnings"`
     3. `git push`
 
-**Would you like me to show you how to add a "License" file to your repository?** It's a small detail, but it makes your project look like a serious open-source contribution to anyone viewing your profile.
