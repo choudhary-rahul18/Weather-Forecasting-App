@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAI | Professional Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen flex items-center justify-center">
+
+    <div class="glass-container p-8 rounded-3xl w-full max-w-md text-center">
+        <h1 class="text-3xl font-bold mb-6">Weather Explorer</h1>
+        
+        <div class="flex gap-2 mb-6">
+            <input id="cityInput" type="text" placeholder="Search City..." 
+                   class="bg-white/10 border-none rounded-xl px-4 py-3 w-full outline-none focus:ring-2 focus:ring-blue-400">
+            <button id="searchBtn" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl transition-all font-bold">
+                Go
+            </button>
+        </div>
+
+        <div id="skeleton" class="hidden my-8 space-y-4">
+    <div class="h-8 bg-white/10 rounded-xl w-3/4 mx-auto animate-pulse"></div>
+    <div class="h-24 w-24 bg-white/10 rounded-full mx-auto animate-pulse"></div>
+    <div class="h-12 bg-white/10 rounded-xl w-1/2 mx-auto animate-pulse"></div>
+    <div class="grid grid-cols-2 gap-4 mt-8">
+        <div class="h-16 bg-white/10 rounded-xl animate-pulse"></div>
+        <div class="h-16 bg-white/10 rounded-xl animate-pulse"></div>
+    </div>
+</div>
+
+        <div id="weatherDisplay" class="hidden fade-in">
+            <h2 id="cityName" class="text-2xl font-bold">---</h2>
+            <img id="weatherIcon" src="" class="mx-auto w-24 h-24 my-2">
+            <p id="temp" class="text-6xl font-black">--°C</p>
+            <p id="condition" class="text-xl text-gray-300 capitalize">---</p>
+            
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <div class="stat-card">
+                    <span>Wind</span>
+                    <strong id="wind">-- kph</strong>
+                </div>
+                <div class="stat-card">
+                    <span>Humidity</span>
+                    <strong id="humidity">--%</strong>
+                </div>
+            </div>
+        </div>
+
+        <div id="errorBox" class="hidden mt-4 p-4 bg-red-500/20 border border-red-500/50 rounded-xl text-red-200 text-sm">
+            <p id="errorText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
